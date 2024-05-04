@@ -1,0 +1,25 @@
+{
+  "name": "sancercode-tugas3",
+  "version": "1.0.0",
+  "description": "Ini tugas 3 dari Sanbercode",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:suites": "npx mocha --reporter mochawesome module/test/suites",
+    "test:category": "npx mocha --reporter mochawesome module/test/suites/category.module.js",
+    "test:customer": "npx mocha --reporter mochawesome module/test/suites/customer.module.js",
+    "test:product": "npx mocha --reporter mochawesome module/test/suites/product.module.js",
+    "test:user": "npx mocha --reporter mochawesome module/test/suites/user.module.js"
+  },
+  "author": "Siti Nurkhomaria",
+  "license": "ISC",
+  "dependencies": {
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3"
+  }
+}
